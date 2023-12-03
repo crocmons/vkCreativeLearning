@@ -56,7 +56,7 @@ const page = () => {
 
   return (
     <>
-    <motion.main variants={slideUpAbout} initial="initial" animate="enter" className="relative h-[100vh] overflow-hidden flex">
+    <motion.main variants={slideUpAbout} initial="initial" animate="enter" className="mt-0 relative h-[100vh] overflow-hidden flex">
       <Image 
         src="/assets/vrbg2.avif"
         alt="background"

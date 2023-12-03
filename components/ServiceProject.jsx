@@ -48,8 +48,8 @@ const ServiceProject = () => {
         gsap.registerPlugin(ScrollTrigger)
         ScrollTrigger.create({
                 trigger: imgContainerRef.current,
-                start: "-=50px",
-                end: "+=350px",
+                start: "-=100px",
+                end: "+=400px",
                 pin:true
             
         })
