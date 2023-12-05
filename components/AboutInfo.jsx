@@ -85,14 +85,17 @@ const AboutInfo = () => {
     <Section>
       <Container>
         <Right>
-          <Title>Think outside the square space</Title>
+          <Title>VK Creative Learning: </Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle className="text-xl font-semibold ">Who we Are</Subtitle>
+            <Subtitle className="text-xl font-semibold ">Passionate People, Passionate Work</Subtitle>
           </WhatWeDo>
           <Desc className="text-slate-600 font-medium text-lg py-2">
-            a creative group of designers and developers with a passion for the
-            arts.
+          Serving for a vast number of years, we have championed the art of creating pedagogical, effectual, and cost effective e-learning solutions. Our tailor-made e-learning packages entail social learning solutions, customized lectures, videos and simulation, Instructional design, blended learning, translation and localization in more than 50 languages.
+
+            With a wide variety of hybrid e-learning options on the offerings, our clients can choose a learning solution that is cost effective; highly productive; and beneficial to them. Our methodical and systematic approach has helped a lot of business entities, entrepreneurs, and many top notch corporations to save time and efforts. Healthcare, retail, ecommerce, education, manufacturing, IT, corporates, construction, and many other sectorscould use our e-learning solution to reap high ROI, and experience improved results.
+
+
           </Desc>
           <Button>See our works</Button>
         </Right>

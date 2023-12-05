@@ -15,7 +15,7 @@ const ServiceCard = ({i, title, description, src, url, color, progress, range, t
   const scale = useTransform(progress, range, [1, targetScale]);
  
   return (
-    <div ref={container} className="h-[100vh] flex items-center justify-center sticky top-0">
+    <div ref={container} className=" h-auto md:h-[100vh] flex items-center justify-center sticky top-0">
       <motion.div 
         style={{backgroundColor: color, scale, top:`calc(-5vh + ${i * 25}px)`}} 
         className="flex flex-col relative top-[-25%] h-[500px] w-[1000px] rounded-[25px] p-[50px] transform origin-top"
