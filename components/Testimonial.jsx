@@ -18,7 +18,7 @@ const TestimonialCard = ({
 }) => (
     <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-gradient-to-l from-fuchsia-600 to-blue-600 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='bg-gradient-to-l from-fuchsia-600 to-blue-600 p-10 rounded-3xl flex flex-col md:flex-1 w-full h-auto mx-auto text-center justify-center items-center'
   >
     <p className='text-white font-black text-[48px]'>“</p>
 
@@ -55,7 +55,7 @@ const Testimonial = () => {
       >
         <motion.div variants={textVariant()}>
           <p className="text-blue-700 font-semibold text-center text-2xl py-2">What others say</p>
-          <h2 className="text-slate-50 font-semibold text-center text-5xl py-2">Testimonials</h2>
+          <h2 className="text-slate-50 font-semibold text-center text-2xl md:text-5xl py-2">Testimonials</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center items-center mx-auto text-center`}>

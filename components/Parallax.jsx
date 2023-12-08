@@ -18,9 +18,9 @@ const Parallax = () => {
     <div className='parallax'
     ref={ref} 
     style={{background:"linear-gradient(180deg, #ac04b8, #0a1fa6)"}}>
-        <motion.h1 style={{y: yText}}>Why Choose Us?</motion.h1>
+        <motion.h1 className='mx-auto py-3 text-center' style={{y: yText}}>Why Choose Us?</motion.h1>
        
-        <motion.div className='stars' style={{y:yBg}}></motion.div>
+        {/* <motion.div className='stars' style={{y:yBg}}></motion.div> */}
     </div>
   )
 }
