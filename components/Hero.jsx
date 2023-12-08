@@ -44,17 +44,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative  overflow-hidden">
       {/* Particle animation */}
-      <div className="absolute right-0 top-0 h-full w-[80%] z-[3]">
+      <div className="absolute right-0 top-0 h-full w-[100%] z-10">
         <Particle />
       </div>
 
-      <div className="container mx-auto flex justify-between items-center gap-8 py-16 px-4 md:px-8">
+      <div className="container mx-auto flex md:flex-row flex-col justify-between items-center gap-16 md:gap-8 py-16 px-4 md:px-8">
+
         {/* Text content */}
         <FadeIn>
-        <div className="max-w-md mx-auto md:mx-2 md:items-center py-2">
-          <h1 className="text-3xl md:text-6xl font-bold mb-4 py-2">
+        <div className="max-w-md mx-auto  text-center md:text-start items-center md:items-start py-2">
+          <h1 className="text-4xl md:text-6xl tracking-wider font-bold mb-4 mx-auto py-2 ">
             
               <Typewriter
                 options={{
@@ -66,7 +67,7 @@ const Hero = () => {
               />
             
           </h1>
-          <div className="text-lg text-gray-600 mb-8">
+          <div className="text-xl text-slate-600 mb-8">
             
               
               <Typewriter
@@ -84,7 +85,10 @@ const Hero = () => {
 
         {/* Image */}
         <FadeIn>
-        <div className="flex md:flex-row flex-col justify-end items-end">
+        <div className="flex my-5 md:my-0 mx-auto justify-center items-center md:justify-end md:items-end">
+        <div className="absolute right-0 top-0 h-full w-[100%] z-[3] md:hidden">
+        <Particle />
+      </div>
           <Image
             src="/assets/heroimg.png"
             className="object-cover"
@@ -92,6 +96,7 @@ const Hero = () => {
             height={560}
             alt="hero-img"
           />
+
         </div>
         </FadeIn>
       </div>

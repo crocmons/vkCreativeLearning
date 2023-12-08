@@ -121,18 +121,18 @@ const Services = () => {
     };
 
     return (
-        <div className="md:mt-24 py-10 flex items-center justify-center flex-col h-screen">
+        <div className="my-24 py-10 flex items-center justify-center flex-col h-screen">
             <h1 className='font-bold text-4xl text-center text-blue-500'>Our Key <span className=' text-fuchsia-500'>Services</span></h1>
-            <p className='text-md text-gray-500 my-5 py-2 tracking-wide mb-0 text-center'>Looking for the best E-learning development company in Delhi and Noida ? Don't hesitate, view our industry samples and make your best decision</p>
+            <p className='text-md text-gray-500 my-10 py-10 tracking-wide text-center'>Looking for the best E-learning development company in Delhi and Noida ? Don't hesitate, view our industry samples and make your best decision</p>
             {servicesData.map((service, i) => (
                 <motion.div
                     key={i}
-                    className="relative"
+                    className="relative items-center w-[100%] md:w-[25%]"
                     initial="center"
                     animate={positions[positionIndex[i]]}
                     variants={imageVariants}
                     transition={{ duration: 0.5 }}
-                    style={{ width: '25%', position: 'absolute' }}
+                    style={{  position: 'absolute' }}
                 >
                     <ServicesCard
                         image={service.image}
@@ -144,7 +144,7 @@ const Services = () => {
                 </motion.div>
             ))}
             <button
-                className="text-white mt-[500px] text-center justify-center items-center mx-auto bg-blue-500 rounded-md py-2 px-4"
+                className="text-white mt-[500px] text-center justify-center items-center mx-auto bg-blue-500 mb-5 rounded-md py-2 px-4"
                 onClick={handleNext}
             >
                 <span className='flex gap-2 text-center text-xl font-bold'>
