@@ -1,9 +1,7 @@
 "use client"
 import React, { Suspense } from "react";
 import styled from "styled-components";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import Cube from "./Cube";
+import Cubes from "./Cubes";
 
 const Section = styled.div`
   height: 100vh;
@@ -20,7 +18,7 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div`
+const Right = styled.div`
   flex: 1;
 
   @media only screen and (max-width: 768px) {
@@ -36,7 +34,7 @@ const Title = styled.h1`
   }
 `;
 
-const Right = styled.div`
+const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -84,7 +82,7 @@ const AboutInfo = () => {
   return (
     <Section>
       <Container>
-        <Right>
+        <Left>
           <Title>VK Creative Learning: </Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
@@ -98,18 +96,19 @@ const AboutInfo = () => {
 
           </Desc>
           <Button>See our works</Button>
-        </Right>
+        </Left>
 
-        <Left>
-          <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
+        <Right>
+          {/* <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[3, 2, 1]} />
               <Cube />
               <OrbitControls enableZoom={false} autoRotate />
             </Suspense>
-          </Canvas>
-        </Left>
+          </Canvas> */}
+          <Cubes />
+        </Right>
       </Container>
     </Section>
   );
