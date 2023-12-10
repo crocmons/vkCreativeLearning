@@ -33,22 +33,22 @@ function Cubes3D() {
    
    
 
-    const texture_1 = useLoader(TextureLoader, "/assets/hero1.png")
-    const texture_2 = useLoader(TextureLoader, "/assets/ar2.png")
-    const texture_3 = useLoader(TextureLoader, "/assets/corporatelearn.jpg")
-    const texture_4 = useLoader(TextureLoader, "/assets/p1.png")
-    const texture_5 = useLoader(TextureLoader, "/assets/p2.jpg")
-    const texture_6 = useLoader(TextureLoader, "/assets/p3.webp")
+    const texture_1 = useLoader(TextureLoader, "/assets/aboutImg.webp")
+    // const texture_2 = useLoader(TextureLoader, "/assets/aboutImg.webp")
+    // const texture_3 = useLoader(TextureLoader, "/assets/corporatelearn.jpg")
+    // const texture_4 = useLoader(TextureLoader, "/assets/p1.png")
+    // const texture_5 = useLoader(TextureLoader, "/assets/p2.jpg")
+    // const texture_6 = useLoader(TextureLoader, "/assets/p3.webp")
 
     return (
         <mesh ref={mesh}>
             <boxGeometry args={[2.5, 2.5, 2.5]}/>
-            <meshStandardMaterial map={texture_1} attach="material-0"/>
-            <meshStandardMaterial map={texture_2} attach="material-1"/>
-            <meshStandardMaterial map={texture_3} attach="material-2"/>
-            <meshStandardMaterial map={texture_4} attach="material-3"/>
-            <meshStandardMaterial map={texture_5} attach="material-4"/>
-            <meshStandardMaterial map={texture_6} attach="material-5"/>
+            <meshStandardMaterial map={texture_1} />
+            <meshStandardMaterial map={texture_1} />
+            <meshStandardMaterial map={texture_1} />
+            <meshStandardMaterial map={texture_1} />
+            <meshStandardMaterial map={texture_1} />
+            <meshStandardMaterial map={texture_1} />
         </mesh>
     )
 }

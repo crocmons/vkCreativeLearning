@@ -53,6 +53,8 @@ const page = () => {
     xPercent += 0.1 * direction;
   }
 
+  
+
 
   return (
     <>
