@@ -34,13 +34,7 @@ export const projects = [
       link: "https://www.vkcreativelearning.com/services/corporate-elearning-solution",
       color: "#88A28D"
     },
-    {
-      title: "Corporate e-learning Solutions",
-      description: "Optimizing knowledge sharing through corporate e-learning solution based on contextual knowledge and real-life scenarios.",
-      src: "p3.webp",
-      link: "https://www.vkcreativelearning.com/services/corporate-elearning-solution",
-      color: "#88A28D"
-    },
+   
     {
       title: "Content Conversion & Localization",
       description: "Smooth and fast conversion of ILT collateral or complex text into latest e-learning format",

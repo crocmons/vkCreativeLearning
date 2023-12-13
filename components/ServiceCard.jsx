@@ -23,7 +23,7 @@ const ServiceCard = ({i, title, description, src, url, color, progress, range, t
         <h2 className='text-center m-0 text-[28px]'>{title}</h2>
         <div className="flex h-[100%] mt-[50px] gap-[50px]">
           <div className="w-[40%] relative top-[10%]">
-            <p className='text-[14px] md:text-[16px] first-letter:text-[24px] md:first-letter:text-[28px] font-medium items-center py-2 mx-auto'>{description}</p>
+            <p className='text-[14px] md:text-[16px] first-letter:text-[24px] md:first-letter:text-[28px] font-medium items-center mx-auto line-clamp-5'>{description}</p>
             <span className='flex items-center gap-[7px] font-bold'>
               <a className=' cursor-pointer underline text-[13px]' href={url} target="_blank">See more</a>
               <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
