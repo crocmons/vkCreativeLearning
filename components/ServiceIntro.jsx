@@ -38,7 +38,7 @@ const ServiceIntro = () => {
         />
       </div>
 
-      <div className="mt-[35vh] flex items-center justify-center">
+      <div className="mt-[40vh] md:mt-[35vh] flex items-center justify-center">
         <div ref={IntroImg} data-scroll data-scroll-speed="0.3" className="absolute w-[350px] h-[475px] filter brightness-[70%]">
          <Image 
          src={'/assets/vrbg.jpg'}
@@ -47,7 +47,7 @@ const ServiceIntro = () => {
          className=' object-cover object-top'
          />
         </div>
-        <h1 data-scroll data-scroll-speed="0.7" className=' z-[3] text-white text-6xl tracking-wider font-bold transform uppercase'>Our Services</h1>
+        <h1 data-scroll data-scroll-speed="0.7" className=' z-[3] text-white text-4xl md:text-6xl tracking-wider font-bold transform uppercase'>Our Services</h1>
       </div>
     </div>
   )

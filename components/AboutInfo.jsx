@@ -4,18 +4,14 @@ import styled from "styled-components";
 import Cubes from "./Cubes";
 
 const Section = styled.div`
-  height: 100vh;
   scroll-snap-align: center;
-  display: flex;
-  justify-content: center;
+  
 `;
 
 const Container = styled.div`
-  height: 100vh;
+ 
   scroll-snap-align: center;
-  width: 1400px;
-  display: flex;
-  justify-content: space-between;
+  
 `;
 
 const Right = styled.div`
@@ -30,7 +26,7 @@ const Title = styled.h1`
   font-size: 70px;
   font-weight:500;
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 45px;
   }
 `;
 
@@ -44,7 +40,6 @@ const Left = styled.div`
 
   @media only screen and (max-width: 768px) {
     align-items: center;
-    text-align: center;
   }
 `;
 
@@ -76,19 +71,26 @@ const Button = styled.button`
   border: none;
   border-radius: 10px;
   cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    width:100%;
+    font-weight: 700;
+    cursor: pointer;
+  }
 `;
 
 const AboutInfo = () => {
   return (
-    <Section>
-      <Container>
+    <Section className="flex md:flex-row flex-col justify-center items-center md:h-[100vh] mt-5">
+      <Container className="flex md:flex-row flex-col justify-between items-center mx-auto h-[50vh] md:h-[100vh] w-[280px] md:w-[1400px]">
         <Left>
           <Title>VK Creative Learning: </Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle className="text-xl font-semibold ">Passionate People, Passionate Work</Subtitle>
           </WhatWeDo>
-          <Desc className="text-slate-600 font-medium text-lg py-2">
+          <Desc className="text-slate-700 font-medium text-medium md:text-lg py-5 tracking-wide md:py-2 mx-auto">
           Serving for a vast number of years, we have championed the art of creating pedagogical, effectual, and cost effective e-learning solutions. Our tailor-made e-learning packages entail social learning solutions, customized lectures, videos and simulation, Instructional design, blended learning, translation and localization in more than 50 languages.
 
             With a wide variety of hybrid e-learning options on the offerings, our clients can choose a learning solution that is cost effective; highly productive; and beneficial to them. Our methodical and systematic approach has helped a lot of business entities, entrepreneurs, and many top notch corporations to save time and efforts. Healthcare, retail, ecommerce, education, manufacturing, IT, corporates, construction, and many other sectorscould use our e-learning solution to reap high ROI, and experience improved results.
@@ -96,6 +98,9 @@ const AboutInfo = () => {
 
           </Desc>
           <Button>See our works</Button>
+          <div className="flex flex-col md:hidden">
+            <Cubes />
+          </div>
         </Left>
 
         <Right>

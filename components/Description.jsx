@@ -13,8 +13,8 @@ function Description() {
     const description = useRef(null);
     const isInView = useInView(description)
     return (
-        <div ref={description} className="px-[200px] mt-2 flex justify-center">
-            <div className="max-w-[1400px] flex gap-10 relative">
+        <div ref={description} className="px-3 md:px-[200px] mt-[1200px] mx-2 md:mx-auto md:mt-5 flex md:flex-row flex-col justify-center">
+            <div className="max-w-[1400px] flex md:flex-row flex-col gap-10 relative">
 
             <Text paragraphText={paragraph} />
                 {/* <p className="stylesp">

@@ -42,7 +42,7 @@ const page = () => {
     <ServiceDescription />
     <ServiceProject />
     </div>
-    <div ref={container} className="relative mt-2">
+    <div ref={container} className="relative my-28 md:my-6">
       {
         projects.map( (project, i) => {
           const targetScale = 1 - ( (projects.length - i) * 0.05);

@@ -462,11 +462,13 @@
       position: relative;
       z-index: 1;
       transition: color 0.4s linear;
+      font-weight: 500;
   }
 
-  .roundedButton p :hover{
+  .roundedButton p:hover{
       
           color: white;
+          font-weight: bolder;
   }
 
 
@@ -543,7 +545,7 @@
   flex-direction: column;
   gap: 3vw;
   position: relative;
-  margin-top: 200px;
+  margin-top: 180px;
   background-color: white;
   z-index: 1;
 }
@@ -559,18 +561,18 @@
 .circleContainer{
   background-color: red;
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .circle{
-  height: 1550%;
+  height: 1450%;
   width: 120%;
   left: -10%;
   border-radius: 0 0 50% 50%;
   background-color: white;
   z-index: 1;
   position: absolute;
-  box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+  box-shadow: 0px 60px 50px rgba(53, 53, 53, 0.748);
 }
 
 .projectsmain{
@@ -582,6 +584,8 @@
   margin-top: 300px;
 }
 
+
+
 .projectsbody{
   max-width: 1400px;
   width: 100%;
@@ -590,6 +594,36 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projectsmain{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 250px;
+    
+  }
+  .projectsbody{
+    width: 85%;
+  }
+
+  .slidingImages{
+    margin-top: 120px;
+  }
+  .motionslider{
+    width: 130vw;
+    
+  }
+  .circleContainer{
+    margin-top: 35px;
+  }
+  
+  .roundedbtnAbout{
+    margin-top: 40px;
+    width: 160px;
+    height: 160px;
+  }
+  
 }
 
 .modalContainer{
@@ -670,6 +704,25 @@
 
 .projectEl:last-of-type{
   border-bottom: 2px solid rgb(253, 231, 253);
+}
+
+.aboutsliderContainer{
+  top: calc(100vh - 350px);
+}
+
+@media only screen and (max-width: 768px) {
+  .demoproject{
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+   
+  }
+
+  .demoproject p{
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 

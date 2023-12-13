@@ -1,37 +1,58 @@
 export const projects = [
     {
-      title: "Matthias Leidinger",
-      description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      title: "K-12 eLearning Solution",
+      description: "Inspiring students to go beyond traditional curriculum, and helping them to explore, experience the real life application",
       src: "p3.webp",
-      link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
+      link: "https://www.vkcreativelearning.com/services/k12-elearning-solutions",
       color: "#BBACAF"
     },
     {
-      title: "Clément Chapillon",
-      description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
+      title: "Custom eLearning Development Services",
+      description: "Upgrade knowledge of your workforce smoothly and effectively with custom e-learning solution",
       src: "p3.webp",
-      link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
+      link: "https://www.vkcreativelearning.com/services/custom-elearning-solutions",
       color: "#977F6D"
     },
     {
-      title: "Zissou",
-      description: "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
+      title: "AR/VR Development Company in India",
+      description: "Explore, interact, and immerse yourself in a virtual world to understand real life scenarios like never before with AR and VR e-learning solutions",
       src: "p3.webp",
-      link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-      color: "#C2491D"
+      link: "https://www.vkcreativelearning.com/services/ar-vr-elearning-solution",
+      color: "blueviolet"
     },
     {
-      title: "Mathias Svold and Ulrik Hasemann",
-      description: "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
+      title: "Rapid Authoring Solutions",
+      description: "Get the e-learning courseware transformed or developed swiftly at your timeline and budget with our Rapid e-learning solutions",
       src: "p3.webp",
-      link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
+      link: "https://www.vkcreativelearning.com/services/rapid-authoring-solutions",
       color: "#B62429"
     },
     {
-      title: "Mark Rammers",
-      description: "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing collection of images is a visual and meditative journey into the origins of regrets and the uncertainty of stepping into new unknowns.",
+      title: "Corporate e-learning Solutions",
+      description: "Optimizing knowledge sharing through corporate e-learning solution based on contextual knowledge and real-life scenarios.",
       src: "p3.webp",
-      link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
+      link: "https://www.vkcreativelearning.com/services/corporate-elearning-solution",
+      color: "#88A28D"
+    },
+    {
+      title: "Corporate e-learning Solutions",
+      description: "Optimizing knowledge sharing through corporate e-learning solution based on contextual knowledge and real-life scenarios.",
+      src: "p3.webp",
+      link: "https://www.vkcreativelearning.com/services/corporate-elearning-solution",
+      color: "#88A28D"
+    },
+    {
+      title: "Content Conversion & Localization",
+      description: "Smooth and fast conversion of ILT collateral or complex text into latest e-learning format",
+      src: "p3.webp",
+      link: "https://www.vkcreativelearning.com/services/content-conversion-and-localization",
+      color: "#88A28D"
+    },
+    {
+      title: "Flash to HTML Conversion",
+      description: "Adobe will stop supporting Flash by the end of 2020. This implies that your Flash based e-learning courses or Flash animations will stop functioning. Thus, Flash to HTML5 e-learning conversion will ensure you are on a safer side.",
+      src: "p3.webp",
+      link: "https://www.vkcreativelearning.com/services/flash-to-html-conversion",
       color: "#88A28D"
     }
   ]

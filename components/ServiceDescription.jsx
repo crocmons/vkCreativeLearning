@@ -10,7 +10,7 @@ const ServiceDescription = () => {
     ]
 
   return (
-    <div className='relative z-[1] text-5xl text-white font-bold transform uppercase mt-[30vw] ml-[13vw]'>
+    <div className='relative z-[1] text-3xl md:text-5xl tracking-wider py-2 md:py-0 text-white font-bold transform uppercase mt-[40vw] md:mt-[30vw] ml-[13vw]'>
       {
         phrases.map((phrase,index)=>(
             <AnimatedText key={index}>

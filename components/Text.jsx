@@ -14,7 +14,7 @@ const Text = ({paragraphText}) => {
   return (
     <p
     ref={container}
-    className='flex text-[60px] tracking-wide p-[40px] max-w-[1280px] text-black flex-wrap'
+    className='flex text-[30px] md:text-[60px] tracking-wide md:p-[40px] max-w-[500px] md:max-w-[1280px] font-medium md:font-light text-black mx-auto flex-wrap'
     >
      {
         words.map((word, i)=>{

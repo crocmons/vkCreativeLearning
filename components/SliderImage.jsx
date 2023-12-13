@@ -64,8 +64,8 @@ export default function SliderImage() {
                                     <Image 
                                     alt={"image"}
                                     src={`/assets/${project.src}`}
-                                    width={300}
-                                    height={300}
+                                    width={500}
+                                    height={500}
                                     />
                                 </div>
                             </div>
@@ -80,8 +80,8 @@ export default function SliderImage() {
                                     <Image 
                                     alt={"image"}
                                     src={`/assets/${project.src}`}
-                                    width={300}
-                                    height={300}
+                                    width={500}
+                                    height={500}
                                     />
                                 </div>
                             </div>

@@ -8,7 +8,7 @@ import { OrbitControls} from '@react-three/drei';
 export default function Cubes() {
 
     return (
-        <div className='h-[100vh]'>
+        <div className='h-[80vh] md:h-[100vh]'>
             
                 <Canvas>
                     <OrbitControls  enablePan={false} enableZoom={false} autoRotate />

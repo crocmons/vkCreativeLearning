@@ -14,6 +14,7 @@ import Projects from "@/components/Projects";
 import SliderImage from "@/components/SliderImage";
 
 import AboutInfo from "@/components/AboutInfo";
+import AboutHero from "@/components/AboutHero";
 
 
 
@@ -58,7 +59,7 @@ const page = () => {
 
   return (
     <>
-    <motion.main variants={slideUpAbout} initial="initial" animate="enter" className="mt-0 relative h-[100vh] overflow-hidden flex">
+    {/* <motion.main variants={slideUpAbout} initial="initial" animate="enter" className="mt-0 relative h-[100vh] overflow-hidden flex">
       <Image 
         src="/assets/abouthero.jpg"
         alt="background"
@@ -77,12 +78,11 @@ const page = () => {
         </svg>
         
       </div> 
-     </motion.main>
+     </motion.main> */}
+     <AboutHero />
 
-<div className=" py-16 my-5">
     <AboutInfo />
 
-</div>
     {/* <Works /> */}
     <Description />
     <Projects />
@@ -90,7 +90,7 @@ const page = () => {
 
       <Scroll onEnter={()=> setCounter(true)} onExit={()=>setCounter(false)}>
 
-      <div className="section-work countContainer grid grid-cols-6 mt-40 py-3 rounded-lg">
+      <div className="section-work countContainer grid grid-cols-3 mx-1 md:mx-auto md:grid-cols-6 mt-32 py-4 px-2 md:py-3 rounded-xl">
         <div>
           <h2 className="counter font-bold">
            {counter && <CountUp  start={0} end={10} duration={2} delay={0}/>}
@@ -124,28 +124,28 @@ const page = () => {
       </div>
       </Scroll>
       <div className='flex flex-col items-center text-center justify-center mx-auto max-w-5xl sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)]'>
-      <h1 className='sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins'>
+      <h1 className='text-4xl md:text-5xl font-bold sm:leading-snug font-poppins'>
        Advanced
-        <span className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent font-semibold drop-shadow'>
+        <span className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent font-bold drop-shadow'>
           {" "}
           Tools
         </span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className='mt-5 py-2 flex flex-col gap-3 text-slate-700 tracking-wide'>
         <p>
         We employ the latest tools & technologies from the market to create an e-learning solution which is best suited for any organization. We constantly upgrade ourselves to deliver e-learning solutions across domains. The tools employed include are below:
         </p>
       </div>
 
       <div className='py-10 flex flex-col'>
-        <h3 className='font-semibold sm:text-3xl text-xl relative font-poppins'>My Skills</h3>
+        <h3 className='font-semibold sm:text-3xl text-xl relative font-poppins'>Our Skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className='mt-16 flex flex-wrap justify-center items-center md:justify-start md:items-start gap-12'>
           {skills.map((skill) => (
             <div className='block-container w-20 h-20' key={skill.name}>
               <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+              <div className='btn-front rounded-xl mx-auto flex justify-center items-center'>
                 <Image
                   src={skill.imageUrl}
                   alt={skill.name}
